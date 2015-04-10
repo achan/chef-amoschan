@@ -1,0 +1,13 @@
+{
+  "group": "deploy",
+  "user": {
+    "name": "deploy",
+    "password": "$1$B71I8f0E$EndbLd0SM1j1f8zsFFdEV0"
+  },
+  "run_list": [
+    "recipe[amoschan]",
+    "recipe[amoschan::users]",
+    "recipe[amoschan::ssh]",
+    "recipe[amoschan::nginx]"
+  ]
+}

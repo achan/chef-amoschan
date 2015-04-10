@@ -1,0 +1,17 @@
+server {
+  server_name www.badchristian.amoschan.com;
+  return 301 $scheme://badchristian.amoschan.com$request_uri;
+}
+
+server {
+  listen 80 default deferred;
+  server_name badchristian.amoschan.com;
+  root /home/<%= node['user']['name'] %>/apps/badchristian;
+
+  location / {
+    try_files $uri /index.html;
+  }
+
+  error_page 500 502 503 504 /500.html;
+  keepalive_timeout 5;
+}
