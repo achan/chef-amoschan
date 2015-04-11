@@ -8,6 +8,7 @@
     "recipe[amoschan]",
     "recipe[amoschan::users]",
     "recipe[amoschan::ssh]",
+    "recipe[amoschan::app]",
     "recipe[amoschan::nginx]"
   ]
 }

@@ -1,0 +1,9 @@
+~/bin/dropbox.py start
+
+chmod 755 ~/Dropbox
+cd ~/Dropbox
+~/bin/dropbox.py exclude add *
+~/bin/dropbox.py exclude remove Sites
+
+ln -s ~/Dropbox/Sites/badchristian.amoschan.com ~/apps/badchristian
+ln -s ~/Dropbox/Sites/amoschan.com ~/apps/amoschan
